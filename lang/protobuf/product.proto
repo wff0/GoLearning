@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// protoc -I ./ --go_out=./ --micro_out=./ ./product.proto
+option go_package = ".;proto";
+
+package product;
+
+service Product {
+  rpc AddProduct(ProductInfo) returns (ResponseProduct) {}
+}
+
+message ProductInfo {
+  int64 id = 1;
+  string product_name = 2;
+}
+
+message ResponseProduct {
+  int64 product_id = 1;
+}
