@@ -75,6 +75,7 @@ require (
 	github.com/micro/cli/v2 v2.1.2 // indirect
 	github.com/micro/go-micro/v2 v2.9.1 // indirect
 	github.com/micro/micro/v2 v2.9.3 // indirect
+	github.com/micro/micro/v3 v3.12.3 // indirect
 	github.com/miekg/dns v1.1.27 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/hashstructure v1.0.0 // indirect
@@ -116,8 +117,8 @@ require (
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0 // indirect
 	golang.org/x/tools v0.1.11 // indirect
 	golang.org/x/xerrors v0.0.0-20220609144429-65e65417b02f // indirect
-	google.golang.org/genproto v0.0.0-20191216164720-4f79533eabd1 // indirect
-	google.golang.org/grpc v1.26.0 // indirect
+	google.golang.org/genproto v0.0.0-20200806141610-86f49bd18e98 // indirect
+	google.golang.org/grpc v1.40.0 // indirect
 	gopkg.in/fsnotify.v1 v1.4.7 // indirect
 	gopkg.in/square/go-jose.v2 v2.4.1 // indirect
 	gopkg.in/telegram-bot-api.v4 v4.6.4 // indirect
