@@ -1,8 +1,10 @@
 syntax = "proto3";
-
+// go get github.com/micro/micro/v3/cmd/protoc-gen-micro
+// go install github.com/micro/micro/v3@latest
+// protoc -I ./ --go_out=./ --micro_out=./ ./hello.proto
 option go_package = ".;proto";
 
-package hello;
+package go.wff.hello;
 
 service Cap {
   rpc SayHello(SayRequest) returns (SayResponse) {}

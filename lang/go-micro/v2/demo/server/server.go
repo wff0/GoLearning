@@ -1,21 +1,25 @@
 package main
 
 import (
-	proto "GoBasic/lang/go-micro/proto/cap"
+	"GoBasic/lang/go-micro/v2/demo/proto/cap"
 	"context"
 	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/logger"
+	"github.com/micro/micro/v3/service/logger"
 )
 
 type CapService struct {
 }
 
-func (c *CapService) SayHello(ctx context.Context, request *proto.SayRequest, response *proto.SayResponse) error {
-	response.Answer = "hello " + request.Message
+func (c *CapService) SayHello(ctx context.Context, req *proto.SayRequest, res *proto.SayResponse) error {
+	res.Answer = "你也好" + req.Message
 	return nil
 }
 
 func main() {
+	microV2()
+}
+
+func microV2() {
 	// 创建服务
 	svr := micro.NewService(
 		micro.Name("cap.fengfan.service"),
